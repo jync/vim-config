@@ -1,0 +1,8 @@
+node_modules/*
+autoload/*
+plugged/*
+
+npm-debug.log
+tags
+*.bak
+*.swp

@@ -1,0 +1,160 @@
+
+snippet eaf "export async function" b
+export async function ${1:name}(${2:params}) {
+  ${3}
+}
+endsnippet
+
+snippet af "async function" b
+async function ${1:name}(${2:params}) {
+  ${3}
+}
+endsnippet
+
+snippet caf "const async function" b
+const ${1:name} = async (${2:params}) => {
+  ${3}
+}
+endsnippet
+
+snippet cf "const async function" b
+const ${1:name} = (${2:params}) => {
+  ${3}
+}
+endsnippet
+
+snippet pt "param with type"
+${1:param}: ${2:type}${3:,}
+endsnippet
+
+snippet imf "import function" b
+import { ${1:func} } from '${2:.../path}';
+endsnippet
+
+snippet imt "import type" b
+import type { ${1:func} } from '${2:.../path}';
+endsnippet
+
+snippet ext "export type" b
+export type ${1:typeName} = ${2:{}}
+endsnippet
+
+snippet desc "describe block" b
+describe('#${1:functionName}', () => {
+  it('${2:returns x when doing y}', async () => {
+    ${3}
+  });
+});
+endsnippet
+
+snippet it "it block" b
+it('${1:returns x when doing y}', async () => {
+  ${2}
+});
+endsnippet
+
+snippet pa "promise block"
+Promise.all((${1:array} || []).map(async (${2:item}) => (${3:functionBlock})));
+endsnippet
+
+snippet consto "const object" b
+const ${1:obj} = {
+  ${2}
+};
+endsnippet
+
+snippet lodash "lodash import" b
+import { ${1:lodashFuction} } from 'lodash';
+endsnippet
+
+snippet lodash "moment import" b
+import moment from 'moment';
+endsnippet
+
+snippet nbht "new backend helper test" b
+// @flow
+import { expect } from 'chai';
+import testHelperService from '../testHelperService';
+import { createContext } from '../../src/security/contextHelper';
+import { ${1:functionToTest} } from '../../src/${2:module}/$2Helper';
+
+describe('$2', () => {
+    it('#$1', async () => {
+       const { context } = await setupData();
+       ${5}
+    });
+});
+
+async function setupData() {
+    const context = createContext();
+    ${4}
+    return {
+        context
+    };
+}
+endsnippet
+
+snippet nfht "new frontend helper test" b
+// @flow
+import { ${1:functionToTest} } from '../${2:module}Helper';
+
+describe('$2', () => {
+  describe('#$1', () => {
+    it('${3:returns x when y}', () => {
+      ${4}
+    });
+  });
+});
+endsnippet
+
+snippet nfst "new frontend screen test" b
+// @flow
+import React from 'react';
+import TestRenderer from 'react-test-renderer';
+import ShallowRenderer from 'react-test-renderer/shallow';
+import { Pure as ${1:Screen}Screen, type Props } from '../$1Screen';
+import navigator from '${2:../../../}__mocks__/mockNavigator';
+
+describe('$1Screen', () => {
+  // $FlowExpectedError
+  let props: Props;
+  beforeEach(() => {
+    props = {
+      navigator,
+      ${3}
+    };
+  });
+
+  it('renders', () => {
+    const renderer = new ShallowRenderer();
+    renderer.render(<$1Screen {...props} />);
+    expect(renderer.getRenderOutput()).toMatchSnapshot();
+  });
+
+  it('${4:does something when x}', () => {
+    const renderer = TestRenderer.create(
+      <$1Screen {...props} />,
+    );
+    const node = renderer.root.findByProps({ testID: '${5:testId}' });
+    expect(node).toBeTruthy();
+    expect(node.props.onPress).toBeNull();
+    ${6}
+  });
+});
+endsnippet
+
+snippet po "print object"
+console.log('########################## ${1:object}', JSON.stringify($1, null, ${2:2}));
+endsnippet
+
+snippet jps "JSON pretty stringify"
+JSON.stringify(${1:object}, null, ${2:2});
+endsnippet
+
+snippet js "JSON stringify"
+JSON.stringify(${1:object});
+endsnippet
+
+snippet clc "Context Loaders Create" b
+const ${1:object} = await context.loaders.$1.create(${2:param});
+endsnippet

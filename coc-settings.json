@@ -1,0 +1,49 @@
+{
+  "languageserver": {
+    "reason": {
+      "command": "/Users/jasonnah/.config/reasonml/rls/reason-language-server",
+      "filetypes": ["reason", "ocaml", "reason_lisp"],
+      "settings": {
+        "reason_language_server": {
+          "per_value_codelens": true,
+          "dependencies_codelens": true,
+          "opens_codelens": true
+        }
+      }
+    },
+    "flow": {
+      "command": "/Users/jasonnah/.config/nvim/lsp/flow.sh",
+      "args": ["lsp"],
+      "filetypes": ["javascript", "javascriptreact"],
+      "initializationOptions": {},
+      "requireRootPattern": 1,
+      "settings": {},
+      "rootPatterns": [".flowconfig"]
+    }
+  },
+  "coc.preferences.formatOnSaveFiletypes": [
+    "json",
+    "reason",
+    "ocaml",
+    "reason_lisp",
+    "css",
+    "markdown",
+    "Markdown",
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "coc.preferences.colorSupport": true,
+  "coc.preferences.echodocSupport": true,
+  "codeLens.separator": "👓",
+  "codeLens.enable": true,
+  "prettier.requireConfig": true,
+  "eslint.filetypes": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
+  "tsserver.enableJavascript": false
+}
