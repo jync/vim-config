@@ -39,6 +39,7 @@ Plug 'jparise/vim-graphql', {'for': ['graphql', 'reason', 'ocaml', 'reason_lisp'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 " Colors
 Plug 'chriskempson/base16-vim'
@@ -94,6 +95,9 @@ let g:javascript_continuation = 1
 " Autocmds
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
 autocmd QuickFixCmdPost *grep* cwindow
+
+" set filetypes as typescript.tsx
+autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
 
 " UltiSnip
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
