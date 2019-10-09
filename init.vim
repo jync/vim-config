@@ -16,6 +16,9 @@ Plug 'tpope/vim-sleuth'
 Plug 'easymotion/vim-easymotion'
 Plug 'justinmk/vim-sneak'
 
+" auto reload edited files
+Plug 'djoshea/vim-autoread'
+
 " Git
 Plug 'tpope/vim-fugitive'
 
