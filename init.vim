@@ -16,6 +16,9 @@ Plug 'tpope/vim-sleuth'
 Plug 'easymotion/vim-easymotion'
 Plug 'justinmk/vim-sneak'
 
+" auto reload edited files
+Plug 'djoshea/vim-autoread'
+
 " Git
 Plug 'tpope/vim-fugitive'
 Plug 'ruanyl/vim-gh-line'
@@ -96,6 +99,9 @@ let g:javascript_continuation = 1
 " Autocmds
 autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
 autocmd QuickFixCmdPost *grep* cwindow
+
+" set filetypes as typescript.tsx
+autocmd BufNewFile,BufRead *.tsx set filetype=typescript.tsx
 
 " UltiSnip
 " Trigger configuration. Do not use <tab> if you use https://github.com/Valloric/YouCompleteMe.
