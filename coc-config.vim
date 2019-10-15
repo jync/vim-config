@@ -128,3 +128,5 @@ nnoremap <silent> <space>k  :<C-u>CocPrev<CR>
 " Resume latest coc list
 nnoremap <silent> <space>p  :<C-u>CocListResume<CR>
 
+" view all errors
+nnoremap <silent> <leader>le  :<C-u>CocList locationlist<CR>

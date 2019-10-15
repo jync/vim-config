@@ -18,6 +18,7 @@ Plug 'justinmk/vim-sneak'
 
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'ruanyl/vim-gh-line'
 
 "Project Exploration
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -39,6 +40,7 @@ Plug 'jparise/vim-graphql', {'for': ['graphql', 'reason', 'ocaml', 'reason_lisp'
 Plug 'mxw/vim-jsx'
 Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
 
 " Colors
 Plug 'chriskempson/base16-vim'
@@ -110,6 +112,9 @@ let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']
 let g:coc_global_extensions = ['coc-highlight', 'coc-snippets', 'coc-lists', 'coc-eslint', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tailwindcss']
 
 let g:echodoc_enable_at_startup = 1
+
+" Fzf
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git --ignore dist --ignore coverage --ignore build --ignore .next -g ""'
 
 so ~/.config/nvim/coc-config.vim
 so ~/.config/nvim/jn.vim
