@@ -82,7 +82,7 @@ set noswapfile
 set number
 set incsearch
 set hlsearch
-set laststatus=2
+set laststatus=1
 set autoindent
 set backspace=indent,eol,start
 set wildignore+=*/dist/*,*/node_modules/*,*/vendor/bundle/*,*/build/*,*/coverage/*
