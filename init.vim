@@ -21,6 +21,7 @@ Plug 'djoshea/vim-autoread'
 
 " Git
 Plug 'tpope/vim-fugitive'
+Plug 'ruanyl/vim-gh-line'
 
 "Project Exploration
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -117,6 +118,10 @@ let g:UltiSnipsSnippetDirectories=[$HOME.'/.config/nvim/UltiSnips']
 let g:coc_global_extensions = ['coc-highlight', 'coc-snippets', 'coc-lists', 'coc-eslint', 'coc-tsserver', 'coc-emmet', 'coc-css', 'coc-html', 'coc-json', 'coc-prettier', 'coc-tailwindcss']
 
 let g:echodoc_enable_at_startup = 1
+
+" Fzf
+let $FZF_DEFAULT_COMMAND = 'ag --hidden --ignore .git --ignore dist --ignore coverage --ignore build --ignore .next -g ""'
+
 
 " fugitive
 set diffopt+=vertical

@@ -1,11 +1,11 @@
 " Keyboard bindings
-let mapleader = ';'
+let mapleader = ' '
 
 nnoremap <C-p>  :Files<CR>
 inoremap <C-p>  <Esc>:Files<CR>i
-nnoremap <Leader>aa :Ack!<space>
-nmap <Leader>g :call fzf#run(fzf#wrap({'source': 'git ls-files --exclude-standard --others --cached'}))<CR>
-nnoremap <Leader>G  :Files<CR>
+nnoremap <Leader>a :Ack<space>
+" nmap <space><space> :Files<CR>
+" nnoremap <space><space>  :Files<CR>
 
 " History + Git
 " nnoremap gb :BCommits<CR>
@@ -68,13 +68,13 @@ set clipboard=unnamed
 set mouse=a
 
 " NerdCommeter
-map <Laeder>c ,c<space>
+map <Leader>c ,c<space>
 
 " Ack
 if executable('ag')
   let g:ackprg = 'ag --vimgrep'
 endif
-map <Leader>A :Ack!<Space>
+map <Leader>A :Ack!<CR>
 
 " Fix white space on save
 " autocmd BufEnter * EnableStripWhitespaceOnSave
@@ -103,11 +103,11 @@ map <Leader>f :NERDTreeFind<CR>
 "let g:neomake_logfile='/tmp/neomake-error.log'
 "let g:neomake_open_list = 2
 
-map <leader>= :vertical resize +10<CR>
-map <leader>+ :vertical resize -10<CR>
+" map <leader>= :vertical resize +10<CR>
+" map <leader>+ :vertical resize -10<CR>
 
 " Use projectionist
-map <leader>z :A<cr>
+" map <leader>z :A<cr>
 
 " alt - https://github.com/uptech/alt
 " function! AltCommand(path, vim_command)
@@ -135,7 +135,7 @@ nnoremap <leader>ee :tabe $MYVIMRC<cr>
 
 " formatting
 " nnoremap ff :Neoformat prettiereslint<cr>
-nnoremap ff :Prettier<cr>
+" nnoremap ff :Prettier<cr>
 " let g:neoformat_verbose = 1
 
 " terminal for nvim

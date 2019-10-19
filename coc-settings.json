@@ -16,7 +16,7 @@
       "args": ["lsp"],
       "filetypes": ["javascript", "javascriptreact"],
       "initializationOptions": {},
-      "requireRootPattern": 1,
+      "requireRootPattern": true,
       "settings": {},
       "rootPatterns": [".flowconfig"]
     }
@@ -35,7 +35,7 @@
     "typescriptreact"
   ],
   "coc.preferences.colorSupport": true,
-  "coc.preferences.echodocSupport": true,
+  "suggest.echodocSupport": true,
   "codeLens.separator": "👓",
   "codeLens.enable": true,
   "prettier.requireConfig": true,
