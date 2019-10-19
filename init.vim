@@ -118,6 +118,9 @@ let g:coc_global_extensions = ['coc-highlight', 'coc-snippets', 'coc-lists', 'co
 
 let g:echodoc_enable_at_startup = 1
 
+" fugitive
+set diffopt+=vertical
+
 so ~/.config/nvim/coc-config.vim
 so ~/.config/nvim/jn.vim
 
