@@ -45,14 +45,22 @@ Plug 'pangloss/vim-javascript'
 Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
+" Status bar
+Plug 'vim-airline/vim-airline'
+
 " Colors
 Plug 'chriskempson/base16-vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'vim-airline/vim-airline'
 Plug 'altercation/vim-colors-solarized'
 Plug 'joshdick/onedark.vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'jacoborus/tender.vim'
+Plug 'flrnprz/plastic.vim'
+Plug 'sainnhe/gruvbox-material'
+Plug 'lithammer/vim-eighties'
+
+" VimWiki
+Plug 'vimwiki/vimwiki'
 
 " JN additions
 Plug 'junegunn/vim-easy-align'
@@ -88,8 +96,7 @@ set backspace=indent,eol,start
 set wildignore+=*/dist/*,*/node_modules/*,*/vendor/bundle/*,*/build/*,*/coverage/*
 
 " Statusline
-let g:airline#extensions#tabline#enabled = 0
-let g:airline_theme='onedark'
+let g:airline#extensions#tabline#enabled = 1
 
 "JS
 let g:jsx_ext_required = 0
