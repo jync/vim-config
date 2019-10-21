@@ -47,6 +47,7 @@ Plug 'peitalin/vim-jsx-typescript'
 
 " Status bar
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 
 " Colors
 Plug 'chriskempson/base16-vim'
