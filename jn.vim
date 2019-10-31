@@ -130,6 +130,9 @@ map <Leader>f :NERDTreeFind<CR>
 nnoremap <leader>cf :let @+ = expand("%")<cr>
 nnoremap <leader>cF :let @+ = expand("%:p")<cr>
 
+" close all buffers except the one that is opened
+nnoremap <leader>bd :<c-u>up <bar> %bd <bar> e#<cr>
+
 nnoremap <leader>rr :so $MYVIMRC<cr>
 nnoremap <leader>ee :tabe $MYVIMRC<cr>
 
@@ -183,11 +186,11 @@ nnoremap <leader>ee :tabe $MYVIMRC<cr>
 " colorscheme onehalfdark
 " let g:airline_theme='onehalfdark'
 
-" colorscheme tender
-" let g:airline_theme = 'tender'
+colorscheme tender
+let g:airline_theme = 'tender'
 
 " colorscheme gruvbox-material
 " let g:airline_theme = 'gruvbox_material'
 
-colorscheme solarized8_dark_high
+" colorscheme solarized8_dark_high
 "let g:airline_theme = 'solarized'

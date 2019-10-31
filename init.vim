@@ -97,7 +97,7 @@ set backspace=indent,eol,start
 set wildignore+=*/dist/*,*/node_modules/*,*/vendor/bundle/*,*/build/*,*/coverage/*
 
 " Statusline
-let g:airline#extensions#tabline#enabled = 1
+" let g:airline#extensions#tabline#enabled = 1
 
 "JS
 let g:jsx_ext_required = 0
