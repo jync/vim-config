@@ -6,3 +6,4 @@ npm-debug.log
 tags
 *.bak
 *.swp
+.netrwhist

@@ -16,6 +16,9 @@ Plug 'tpope/vim-sleuth'
 Plug 'easymotion/vim-easymotion'
 Plug 'justinmk/vim-sneak'
 
+" NIM support
+Plug 'alaviss/nim.nvim'
+
 " auto reload edited files
 Plug 'djoshea/vim-autoread'
 
@@ -66,10 +69,11 @@ Plug 'vimwiki/vimwiki'
 " JN additions
 Plug 'junegunn/vim-easy-align'
 Plug 'ntpeters/vim-better-whitespace'
-Plug 'flazz/vim-colorschemes'
+" Plug 'flazz/vim-colorschemes'
 Plug 'tpope/vim-projectionist'
 Plug 'SirVer/ultisnips'
 Plug 'honza/vim-snippets'
+Plug 'morhetz/gruvbox'
 
 " vim-js-file-import - uses ctags
 Plug 'ludovicchabant/vim-gutentags'

@@ -186,11 +186,17 @@ nnoremap <leader>ee :tabe $MYVIMRC<cr>
 " colorscheme onehalfdark
 " let g:airline_theme='onehalfdark'
 
-colorscheme tender
-let g:airline_theme = 'tender'
+" colorscheme tender
+" let g:airline_theme = 'tender'
 
 " colorscheme gruvbox-material
 " let g:airline_theme = 'gruvbox_material'
 
 " colorscheme solarized8_dark_high
 "let g:airline_theme = 'solarized'
+"
+" colorscheme tender
+" let g:airline_theme = 'tender'
+
+colorscheme gruvbox
+let g:airline_theme = 'gruvbox'
