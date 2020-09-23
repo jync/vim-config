@@ -33,7 +33,6 @@ Plug 'mileszs/ack.vim'
 Plug 'scrooloose/nerdtree'
 
 " Formatting and Filechecking
-Plug 'prettier/vim-prettier', { 'do': 'yarn install' }
 Plug 'neoclide/coc.nvim', {'do': { -> coc#util#install()}}
 " Function signatures
 Plug 'Shougo/echodoc.vim'
@@ -55,12 +54,12 @@ Plug 'vim-airline/vim-airline-themes'
 " Colors
 Plug 'chriskempson/base16-vim'
 Plug 'airblade/vim-gitgutter'
-Plug 'altercation/vim-colors-solarized'
+" Plug 'altercation/vim-colors-solarized'
 Plug 'joshdick/onedark.vim'
 Plug 'sonph/onehalf', {'rtp': 'vim/'}
 Plug 'jacoborus/tender.vim'
 Plug 'flrnprz/plastic.vim'
-Plug 'sainnhe/gruvbox-material'
+Plug 'morhetz/gruvbox'
 Plug 'lithammer/vim-eighties'
 
 " VimWiki
@@ -71,8 +70,9 @@ Plug 'junegunn/vim-easy-align'
 Plug 'ntpeters/vim-better-whitespace'
 " Plug 'flazz/vim-colorschemes'
 Plug 'tpope/vim-projectionist'
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
+" Plug 'SirVer/ultisnips'
+" Plug 'honza/vim-snippets'
+
 Plug 'morhetz/gruvbox'
 
 " vim-js-file-import - uses ctags
@@ -109,7 +109,6 @@ let g:javascript_plugin_flow = 1
 let g:javascript_continuation = 1
 
 " Autocmds
-autocmd BufWritePre *.js,*.jsx,*.mjs,*.ts,*.tsx,*.css,*.less,*.scss,*.json,*.graphql,*.md,*.vue PrettierAsync
 autocmd QuickFixCmdPost *grep* cwindow
 
 " set filetypes as typescript.tsx
